@@ -1,0 +1,25 @@
+MANDRU COSMINA
+323CB
+
+						TEMA 1 - PA
+
+	1. Bani: Am rezolvat aceasta problema utilizand programare dinamica. Pentru 
+	rezolvare am utilizat o matrice de 5 linii (fiecare linie reprezentand o bancnota)
+	si n coloane ( n - numarul citit din fisier). Am impartit problema in subprobleme
+	mai mici si anume: aflu cate combinatii exista pentru fiecare pas de la 1 pana la n.
+	Pentru fiecare pas i exista 5 posibilitati: ultima bancnota sa fie de 10, de 50, de 100,
+	de 200 sau de 500. Astfel pentru pasul curent numarul de combiantii este reprezentat de 
+	de numarul de combinatii de la pasul i al monezilor care ar trebuii sa se afla inaintea
+	bancnotei respective. Rezultatul final va fi suma dintre fiecare valoare de pe ultima 
+	coloana.
+
+	Complexitate: O(n).
+
+	2. Gard: Am stocat valorile intr-un vector de tip Coordonate, ce contine campurile x si
+	y. Sortez acest vector descrescator dupa y si in caz de egalitate crescator dupa x. Parcurg
+	acest vectori si tratez cazurile speciale cand ma aflu pe ultima sau pe prima pozitie si
+	verific incluziunea pentru a determina bucatile de gard in plus. Daca gasesc o astfel de 
+	bucata o voi elimina din vector si in plus daca nu ma aflu pe pozitia initiala sau finala
+	ma intorc cu 2 pasi inapoi. De fiecare data cand elimin cresc un contor cnt.
+
+	Complexitate: a
